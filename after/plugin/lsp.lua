@@ -10,6 +10,9 @@ api.nvim_create_autocmd("LspAttach", {
     end
 })
 
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 -- lua
-require("lspconfig").lua_ls.setup {}
+require("lspconfig").lua_ls.setup({
+    capabilities = capabilities
+})
