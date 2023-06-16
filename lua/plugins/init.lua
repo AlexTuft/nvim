@@ -1,4 +1,8 @@
 return {
+    -- autoclose
+    {
+        "windwp/nvim-autopairs"
+    },
     -- cmp
     {
         "hrsh7th/nvim-cmp",
