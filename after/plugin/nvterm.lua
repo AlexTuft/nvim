@@ -29,3 +29,4 @@ local term = require("nvterm.terminal")
 
 vim.keymap.set("n", "<F7>", function() term.toggle("float") end, {})
 vim.keymap.set("t", "<F7>", function() term.toggle("float") end, {})
+vim.keymap.set("t", "<F8>", term.close_all_terms, {})
