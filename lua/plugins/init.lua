@@ -1,7 +1,10 @@
 return {
     -- autoclose
     {
-        "windwp/nvim-autopairs"
+        "windwp/nvim-autopairs",
+        config = function()
+            require("nvim-autopairs").setup({})
+        end
     },
     -- cmp
     {
@@ -37,6 +40,10 @@ return {
         dependencies = {
             "nvim-lua/plenary.nvim"
         }
+    },
+    -- terminal
+    {
+        "NvChad/nvterm"
     },
     -- treesitter
     {
