@@ -19,13 +19,6 @@ return {
             "hrsh7th/vim-vsnip",
         }
     },
-    -- file tree
-    {
-        "nvim-tree/nvim-tree.lua",
-        dependencies = {
-            "nvim-tree/nvim-web-devicons"
-        }
-    },
     -- lsp
     {
         "williamboman/mason.nvim",
