@@ -1,1 +1,1 @@
-print("Hello, world!")
+vim.g.mapleader = " "
