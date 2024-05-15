@@ -32,3 +32,5 @@ vim.api.nvim_command("highlight EndOfBuffer guibg=NONE ctermbg=NONE")
 vim.opt.spell = true
 vim.opt.spelllang = "en_us"
 
+-- theme
+vim.cmd("colorscheme aplab")
