@@ -79,3 +79,17 @@ mason_lspconfig.setup_handlers {
 
 local lspconfig = require("lspconfig")
 
+lspconfig.rust_analyzer.setup {
+    capabilities = capabilities,
+    on_attach = on_attach,
+    cmd = {
+        "rustup", "run", require("rust").get_rust_toolchain(), "rust-analyzer",
+    },
+    settings = {
+        ["rust-analyzer"] = {
+            check = {
+                command = "clippy"
+            }
+        }
+    }
+}
