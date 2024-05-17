@@ -85,3 +85,6 @@ hl(0, "CursorLineNr", { fg = base_7, bg = base_0 })
 hl(0, "CursorLine", { fg = base_7, bg = base_1 })
 hl(0, "Visual", { fg = base_7, bg = base_1 })
 
+--netrw
+hl(0, "Directory", { fg = blue_5, bg = base_0 })
+
