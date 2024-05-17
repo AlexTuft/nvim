@@ -79,6 +79,8 @@ hl(0, "Comment", { fg = orange_4 , bg = base_0 })
 hl(0, "Todo", { fg = blue_4, bg = base_0 })
 
 -- ui
+hl(0, "NormalFloat", { fg = base_3, bg = base_1 })
+hl(0, "FloatBorder", { bg = base_4 })
 hl(0, "NonText", { fg = base_3, bg = base_0 })
 hl(0, "LineNr", { fg = base_3, bg = base_0 })
 hl(0, "CursorLineNr", { fg = base_7, bg = base_0 })
