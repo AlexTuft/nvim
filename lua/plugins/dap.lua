@@ -10,6 +10,12 @@ vim.keymap.set("n", "<F4>", function () dap.step_out() end, { desc = "Step out" 
 vim.keymap.set("n", "<leader>b", function () dap.toggle_breakpoint() end, { desc = "Toggle breakpoint" })
 
 -- UI
+vim.fn.sign_define("DapBreakpoint", { text="", texthl="DapBreakpoint", linehl="", numhl="" })
+vim.fn.sign_define("DapBreakpointCondition", { text="", texthl="DapBreakpoint", linehl="", numhl="" })
+vim.fn.sign_define("DapBreakpointRejected", { text="", texthl="DapBreakpoint", linehl="", numhl= "" })
+vim.fn.sign_define("DapLogPoint", { text="", texthl="DapLogPoint", linehl="", numhl= "" })
+vim.fn.sign_define("DapStopped", { text="", texthl="DapStopped", linehl="", numhl= "" })
+
 ui.setup()
 
 dap.listeners.after.event_initialized["dapui_config"] = function()

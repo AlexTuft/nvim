@@ -90,3 +90,8 @@ hl(0, "Visual", { fg = base_7, bg = base_1 })
 --netrw
 hl(0, "Directory", { fg = blue_5, bg = base_0 })
 
+-- dap
+vim.api.nvim_set_hl(0, 'DapBreakpoint', { fg = red_2 })
+vim.api.nvim_set_hl(0, 'DapLogPoint', { fg = orange_4 })
+vim.api.nvim_set_hl(0, 'DapStopped', { fg = green_4 })
+
