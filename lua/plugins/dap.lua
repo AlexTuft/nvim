@@ -62,5 +62,11 @@ dap.configurations.rust = {
     },
 }
 
--- TODO get this to work
--- require("dap.ext.vscode").load_launchjs(nil, { lldb = { "rust" } })
+require("dap-python").resolve_python = function()
+    return require("python").get_install_path()
+end
+
+require("dap.ext.vscode").load_launchjs(nil, {
+    -- lldb = { "rust" },
+    -- python = { "python" },
+})

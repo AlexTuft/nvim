@@ -5,6 +5,7 @@ return {
         "rcarriga/nvim-dap-ui",
         "nvim-neotest/nvim-nio",
         "nvim-telescope/telescope-dap.nvim",
+        "mfussenegger/nvim-dap-python",
     },
     config = function()
         require("plugins.dap")
