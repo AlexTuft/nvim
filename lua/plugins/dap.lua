@@ -24,3 +24,28 @@ dap.listeners.before.event_exited["dapui_config"] = function()
     ui.close()
 end
 
+-- Adapters
+dap.adapters.lldb = {
+    type = "executable",
+    command = "/usr/bin/lldb-dap-18",
+    name = "lldb"
+}
+
+-- Configurations
+dap.configurations.rust = {
+    {
+        type = "lldb",
+        name = "Debug executable",
+        request = "launch",
+        program = function()
+            vim.fn.system("cargo build")
+            return require("rust").get_target_path()
+        end,
+        cwd = "${workspaceFolder}",
+        stopOnEntry = false,
+        args = {}
+    }
+}
+
+-- TODO get this to work
+-- require("dap.ext.vscode").load_launchjs(nil, { lldb = { "rust" } })
