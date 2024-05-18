@@ -75,7 +75,7 @@ hl(0, "String", literals)
 hl(0, "Number", literals)
 hl(0, "Boolean", literals)
 
-hl(0, "Comment", { fg = orange_4 , bg = base_0 })
+hl(0, "Comment", { fg = orange_4, bg = base_0 })
 hl(0, "Todo", { fg = blue_4, bg = base_0 })
 
 -- ui
@@ -91,7 +91,6 @@ hl(0, "Visual", { fg = base_7, bg = base_1 })
 hl(0, "Directory", { fg = blue_5, bg = base_0 })
 
 -- dap
-vim.api.nvim_set_hl(0, 'DapBreakpoint', { fg = red_2 })
-vim.api.nvim_set_hl(0, 'DapLogPoint', { fg = orange_4 })
-vim.api.nvim_set_hl(0, 'DapStopped', { fg = green_4 })
-
+vim.api.nvim_set_hl(0, "DapBreakpoint", { fg = red_2 })
+vim.api.nvim_set_hl(0, "DapLogPoint", { fg = orange_4 })
+vim.api.nvim_set_hl(0, "DapStopped", { fg = green_4 })

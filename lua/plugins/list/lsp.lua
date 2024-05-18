@@ -13,6 +13,6 @@ return {
         "folke/neodev.nvim",
     },
     config = function()
-        require('plugins.lsp')
-    end
+        require("plugins.lsp")
+    end,
 }

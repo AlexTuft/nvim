@@ -6,5 +6,5 @@ return {
     },
     config = function()
         require("plugins.harpoon")
-    end
+    end,
 }

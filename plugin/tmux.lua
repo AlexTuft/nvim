@@ -5,7 +5,7 @@ local tmux_directions = {
     ["l"] = "R",
 }
 
-function is_tmux()
+local function is_tmux()
     return vim.env.TMUX ~= nil
 end
 
@@ -18,15 +18,31 @@ local function tmux_vim_change_window(direction)
     end
 end
 
-function setup_vim_tmux_navigation()
-    vim.keymap.set("n", "<C-H>", function() tmux_vim_change_window("h") end)
-    vim.keymap.set("n", "<C-J>", function() tmux_vim_change_window("j") end)
-    vim.keymap.set("n", "<C-K>", function() tmux_vim_change_window("k") end)
-    vim.keymap.set("n", "<C-L>", function() tmux_vim_change_window("l") end)
-    vim.keymap.set("n", "<C-LEFT>", function() tmux_vim_change_window("h") end)
-    vim.keymap.set("n", "<C-DOWN>", function() tmux_vim_change_window("j") end)
-    vim.keymap.set("n", "<C-UP>", function() tmux_vim_change_window("k") end)
-    vim.keymap.set("n", "<C-RIGHT>", function() tmux_vim_change_window("l") end)
+local function setup_vim_tmux_navigation()
+    vim.keymap.set("n", "<C-H>", function()
+        tmux_vim_change_window("h")
+    end)
+    vim.keymap.set("n", "<C-J>", function()
+        tmux_vim_change_window("j")
+    end)
+    vim.keymap.set("n", "<C-K>", function()
+        tmux_vim_change_window("k")
+    end)
+    vim.keymap.set("n", "<C-L>", function()
+        tmux_vim_change_window("l")
+    end)
+    vim.keymap.set("n", "<C-LEFT>", function()
+        tmux_vim_change_window("h")
+    end)
+    vim.keymap.set("n", "<C-DOWN>", function()
+        tmux_vim_change_window("j")
+    end)
+    vim.keymap.set("n", "<C-UP>", function()
+        tmux_vim_change_window("k")
+    end)
+    vim.keymap.set("n", "<C-RIGHT>", function()
+        tmux_vim_change_window("l")
+    end)
 end
 
 if is_tmux() then

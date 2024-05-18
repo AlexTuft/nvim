@@ -14,15 +14,15 @@ function M.get_rust_toolchain()
 end
 
 function M.get_target_path()
-    local meta = vim.fn.system('cargo metadata --format-version 1 --no-deps')
+    local meta = vim.fn.system("cargo metadata --format-version 1 --no-deps")
     meta = vim.fn.json_decode(meta)
 
     local targets = {}
     for _, module in ipairs(meta.packages) do
         for _, target in ipairs(module.targets) do
-           if table.contains_value(target.kind, "bin") then
+            if table.contains_value(target.kind, "bin") then
                 table.insert(targets, target.name)
-           end
+            end
         end
     end
 
@@ -37,7 +37,7 @@ function M.get_target_path()
             print(i .. ". " .. m)
         end
         local selected = tonumber(vim.fn.input("> "))
-        module = targets[selected];
+        module = targets[selected]
     end
 
     return meta.target_directory .. "/debug/" .. module

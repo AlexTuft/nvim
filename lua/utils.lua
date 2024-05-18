@@ -6,4 +6,3 @@ function table.contains_value(self, value)
     end
     return false
 end
-

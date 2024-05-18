@@ -8,5 +8,5 @@ return {
     },
     config = function()
         require("plugins.dap")
-    end
+    end,
 }

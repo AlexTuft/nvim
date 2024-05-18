@@ -7,5 +7,5 @@ return {
     build = ":TSUpdate",
     config = function()
         require("plugins.treesitter")
-    end
+    end,
 }

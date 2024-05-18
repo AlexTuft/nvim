@@ -1,4 +1,4 @@
-require("nvim-treesitter.configs").setup {
+require("nvim-treesitter.configs").setup({
     -- Add languages to be installed here that you want installed for treesitter
     ensure_installed = { "lua", "vimdoc", "vim" },
 
@@ -60,7 +60,7 @@ require("nvim-treesitter.configs").setup {
             },
         },
     },
-}
+})
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic message" })

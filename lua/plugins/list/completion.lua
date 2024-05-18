@@ -13,5 +13,5 @@ return {
     },
     config = function()
         require("plugins.completion")
-    end
+    end,
 }

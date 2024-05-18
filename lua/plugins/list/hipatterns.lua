@@ -4,7 +4,7 @@ return {
     opts = {
         highlighters = {
             hsl_color = {
-               pattern = "hsl%(%d+, %d%.%d+, %d%.%d+%)",
+                pattern = "hsl%(%d+, %d%.%d+, %d%.%d+%)",
                 group = function(_, match)
                     -- -- Stolen from craftzdog
                     local utils = require("theme.utils")
