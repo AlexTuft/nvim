@@ -60,10 +60,6 @@ capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 -- Ensure the servers above are installed
 local mason_lspconfig = require("mason-lspconfig")
 
-mason_lspconfig.setup({
-    ensure_installed = vim.tbl_keys(servers),
-})
-
 mason_lspconfig.setup_handlers({
     function(server_name)
         require("lspconfig")[server_name].setup({
@@ -76,7 +72,6 @@ mason_lspconfig.setup_handlers({
 })
 
 -- manage some LSPs without mason
-
 local lspconfig = require("lspconfig")
 
 lspconfig.rust_analyzer.setup({
