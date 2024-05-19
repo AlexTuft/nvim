@@ -21,6 +21,7 @@ return {
                 -- c++
                 "cmake",
                 "clangd",
+                "glsl_analyzer",
                 -- lua
                 "lua_ls",
                 -- python
