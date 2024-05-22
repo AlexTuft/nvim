@@ -1,6 +1,8 @@
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 
+vim.keymap.set("n", ",", "@@") -- replay last macro
+
 vim.keymap.set("n", "<leader><leader>c", function()
     vim.cmd("colorscheme aplab")
 end)
