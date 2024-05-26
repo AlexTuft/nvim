@@ -84,7 +84,7 @@ hl(0, "FloatBorder", { bg = base_4 })
 hl(0, "NonText", { fg = base_3, bg = base_0 })
 hl(0, "LineNr", { fg = base_3, bg = base_0 })
 hl(0, "CursorLineNr", { fg = base_7, bg = base_0 })
-hl(0, "CursorLine", { fg = base_7, bg = base_1 })
+hl(0, "CursorLine", { bg = base_0 })
 hl(0, "Visual", { fg = base_7, bg = base_1 })
 
 --netrw
