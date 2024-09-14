@@ -13,6 +13,7 @@ vim.opt.autoindent = true
 vim.opt.list = true
 vim.opt.listchars = {
     trail = "•",
+    tab = "  ",
 }
 
 -- Disable highlight on search
