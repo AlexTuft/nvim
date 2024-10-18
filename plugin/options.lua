@@ -34,7 +34,7 @@ vim.opt.spell = true
 vim.opt.spelllang = "en_us"
 
 -- theme
-vim.cmd("colorscheme nomai")
+vim.cmd("colorscheme base16-catppuccin-macchiato")
 
 -- highlight yanked text
 vim.api.nvim_create_autocmd("TextYankPost", {
