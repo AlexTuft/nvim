@@ -3,7 +3,7 @@ require("utils")
 local M = {}
 
 function M.get_rust_toolchain()
-    local toolchain = vim.fn.system("rustup default")
+    local toolchain = vim.fn.system("rustup show active-toolchain")
 
     local space_index = string.find(toolchain, " ")
     if space_index ~= nil then
